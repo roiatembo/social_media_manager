@@ -7,8 +7,9 @@
 --------------------------------------------------------------*/
 
 :root {
-  --background-color: #8E4162;
-  --primary-color: #6EC1E4; 
+  --background-color: #8e4162;
+  --primary-color: #6ec1e4;
+  --secondar-color: #7a7a7a;
 }
 
 /*--------------------------------------------------------------
@@ -19,11 +20,10 @@ img {
   max-width: 100%;
 }
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +31,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -49,4 +49,35 @@ code {
   font-size: 20px;
   font-weight: 600;
   color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Body Content
+--------------------------------------------------------------*/
+
+.company-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+
+
+.company-box {
+  background-color: var(--primary-color);
+  text-align: left;
+  padding-left: 10px;
+  width: 300px;
+  border-radius: 11px;
+}
+
+.company-box h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.company-box p {
+  font-size: 17px;
+  color: var(--secondar-color);
 }
