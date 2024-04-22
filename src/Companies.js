@@ -1,5 +1,6 @@
 import { useEffect, useState} from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import CompanyBox from "./CompanyBox";
 
 export function Companies () {
@@ -22,7 +23,9 @@ export function Companies () {
         <div className="company-container">
           <ul>
             {companies.map(company => (
-                <li><CompanyBox key={company.id} company={company} /></li>
+                <li key={company.id}>
+                  <Link to={"/company/"+company.id}><CompanyBox key={company.id} company={company} /></Link>
+                </li>
             ))}
             </ul>
         </div>
