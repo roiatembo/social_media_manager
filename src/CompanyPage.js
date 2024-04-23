@@ -25,7 +25,7 @@ export function CompanyPage() {
       {company ? (
         <div>
         <h2>{company.name}</h2>
-        <SocialDetails key={company.id} companyId={company.id}/>
+        <SocialDetails key={company.id} compId={company.id}/>
         </div>
       ) : (
         <h2>Loading...</h2>
